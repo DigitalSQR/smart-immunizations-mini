@@ -170,6 +170,10 @@ menu:
     Artifact Index: artifacts.html
     Mappings: maps.html
 
+meta:
+  profile:
+    - http://worldhealthorganization.github.io/smart-immunizations-mini/StructureDefinition/SMARTImplementationGuide
+
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
 # │  resource. These properties are less commonly needed than those above.                         │
