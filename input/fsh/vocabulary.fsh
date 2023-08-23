@@ -1,9 +1,4 @@
 
-Alias: WHOATC = http://www.whocc.no/at
-Alias: SNOMED_CT_INT = http://snomed.info/sct
-Alias: ICD-11 = http://id.who.int/icd11/mms
-Alias: LOINC = http://loinc.org
-
 ValueSet: VaccineDiseases
 Id: VaccineDiseasesVS
 Title: "Vaccine Diseases Value Set"
@@ -12,7 +7,7 @@ Description: "Vaccine Diseases."
 
 
 
-Alias: WHOATC = http://www.whocc.no/at
+Alias: $ATC = http://www.whocc.no/at
 
 
 CodeSystem: VaccinesCS
@@ -34,7 +29,7 @@ Description: "Vaccines CS"
 
   
   * ^property[+].code = #mapping
-  * ^property[=].valueCoding = WHOATC#J07BD
+  * ^property[=].valueCoding = $ATC#J07BD
 
 
 
@@ -58,7 +53,7 @@ Description: "Vaccine Types CS"
    "Measles, live attenuated"
   
   * ^property[0].code = #mapping
-  * ^property[=].valueCoding = WHOATC#J07BD01
+  * ^property[=].valueCoding = $ATC#J07BD01
   
   * ^property[+].code = #live
   * ^property[=].valueBoolean = true
@@ -71,18 +66,18 @@ Description: "Vaccines."
 * ^status = #draft
 * ^experimental = false
 * ^immutable = true
-* WHOATC#J07BD53 "measles, combinations with rubella, live attenuated"
-* WHOATC#J07BD54 "measles, combinations with mumps, rubella and varicella, live attenuated"
-* WHOATC#J07BD "Measles vaccines"
-* WHOATC#J07BD52 "measles, combinations with mumps and rubella, live attenuated"
-* WHOATC#J07BD01 "measles, live attenuated"
-* WC#J07BD51 "measles, combinations with mumps, live attenuated"
-* SNOMED_CT_INT#440075005 "Live measles + rubella vaccine injection dose form (product)"
-* SNOMED_CT_INT#419550004 "Measles + mumps + rubella + varicella vaccine (product)"
-* SNOMED_CT_INT#386012008 "Measles vaccine (product)"
-* SNOMED_CT_INT#400449000 "Measles virus vaccine, live, 0.5mL/vial powder for injection (product)"
-* SNOMED_CT_INT#61153008 "Measles, mumps and rubella vaccine (product)"
-* SNOMED_CT_INT#347649008 "Measles/mumps/rubella vaccine powder and solvent for injection solution vial (product)"
-* SNOMED_CT_INT#419771007 "Measles/mumps/rubella/varicella vaccine powder and solvent for injection solution vial (product)"
-* ICD-11#XM28X5 "Measles vaccines"
-* LOINC#30940-1 "Measles virus+Mumps virus+Rubella virus dose count in combination vaccine"
+* $ATC#J07BD53 "measles, combinations with rubella, live attenuated"
+* $ATC#J07BD54 "measles, combinations with mumps, rubella and varicella, live attenuated"
+* $ATC#J07BD "Measles vaccines"
+* $ATC#J07BD52 "measles, combinations with mumps and rubella, live attenuated"
+* $ATC#J07BD01 "measles, live attenuated"
+* $ATC#J07BD51 "measles, combinations with mumps, live attenuated"
+* $SCT#440075005 "Live measles + rubella vaccine injection dose form (product)"
+* $SCT#419550004 "Measles + mumps + rubella + varicella vaccine (product)"
+* $SCT#386012008 "Measles vaccine (product)"
+* $SCT#400449000 "Measles virus vaccine, live, 0.5mL/vial powder for injection (product)"
+* $SCT#61153008 "Measles, mumps and rubella vaccine (product)"
+* $SCT#347649008 "Measles/mumps/rubella vaccine powder and solvent for injection solution vial (product)"
+* $SCT#419771007 "Measles/mumps/rubella/varicella vaccine powder and solvent for injection solution vial (product)"
+* $ICD-11#XM28X5 "Measles vaccines"
+* $LOINC#30940-1 "Measles virus+Mumps virus+Rubella virus dose count in combination vaccine"
