@@ -5,7 +5,7 @@ Description:  "CodeSystem for IMMZ.C Data Elements"
 
 * ^experimental = false
 * ^caseSensitive = false
-* ^name = "IMMZ-C"
+* ^name = "IMMZ_C"
 * #DE1 "Unique identifier" "Unique identifier for the client, according to the policies applicable to each country. There can be more than one unique identifier used to link records (e.g. national ID, health ID, immunization information system ID, medical record ID)."
 * #DE2 "Name" "The full name of the client"
 * #DE3 "First name" "Client's first name or given name"
