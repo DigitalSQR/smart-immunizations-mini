@@ -1,7 +1,9 @@
-Instance:     IMMZ-C.SexToAdministrativeGender
+Instance:     IMMZ-C-SexToAdministrativeGender
 InstanceOf:   ConceptMap
 Description:  "Mapping to and from IMMZ.C sex coding to FHIR Administrative Gender."
 Usage:        #definition
+
+* url = "http://worldhealthorganization.github.io/smart-immunizations-mini/ConceptMap/IMMZ-C-SexToAdministrativeGender"
 
 * name = "IMMZ_C_SexToAdministrativeGender"
 * title = "ConceptMap to and From IMMZ.C sex to administrative gender"
