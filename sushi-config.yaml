@@ -174,7 +174,7 @@ menu:
 
 meta:
   profile:
-    - http://worldhealthorganization.github.io/smart-immunizations-mini/StructureDefinition/SMARTImplementationGuide
+    - http://worldhealthorganization.github.io/smart-base/StructureDefinition/SGImplementationGuide
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
@@ -305,3 +305,6 @@ meta:
 #   if InstanceOf references a profile:
 #
 #   setId: always # always | standalone-only
+
+parameters:
+  path-resource: input/actors
