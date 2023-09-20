@@ -1,0 +1,25 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	responsesForQuestionnaire	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-smart-immunizations-mini.json	12385	-	0	0	0	0	0	0	15	2395	0	0	0	0	0	0	0	2	0	0	463	635	0	0	0	0	7	0	0
+input/actors/ActorDefinition-EPIManager.json	728	13	0	0	0	0	0	0	0	36	0	0	0	0	0	0	0	0	0	0	69	50	0	0	0	0	1	0	1
+input/actors/ActorDefinition-CommunityHealthWorker.json	760	7	1	0	0	0	0	0	0	32	0	0	0	0	0	0	0	0	0	0	61	64	0	0	0	0	0	0	0
+input/actors/ActorDefinition-HealthWorker.json	559	7	0	0	0	0	0	0	0	38	0	0	0	0	0	0	0	0	0	0	58	40	0	0	0	0	9	0	0
+fsh-generated/resources/ValueSet-IMMZ-D1.DE56.json	885	8	0	0	0	0	0	0	0	387	0	0	0	0	0	0	0	0	0	0	33	25056	0	0	1	0	2	0	0
+fsh-generated/resources/ValueSet-IMMZ-D1.DE65.json	725	7	1	0	0	0	0	0	0	220	0	0	0	0	0	0	0	0	0	0	24	176	0	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-IMMZ-D1.DE61.json	799	10	0	0	0	0	0	0	1	214	0	0	0	0	0	0	0	0	0	0	34	133	0	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-IMMZ-D1.DE68.json	868	7	0	0	0	0	0	0	0	182	0	0	0	0	0	0	0	0	0	0	23	124	0	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-IMMZ-D1.DE73.json	775	6	0	1	0	0	0	0	0	184	0	0	0	0	0	0	0	0	0	0	15	124	0	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-IMMZ-D1-client-history-measles.json	9392	1272	0	0	0	0	0	2470	0	2561	0	0	1	0	0	0	0	0	0	0	119	1557	0	0	0	0	12	0	0
+fsh-generated/resources/ValueSet-IMMZ-D1.DE87.json	715	11	0	0	0	0	0	0	0	181	0	0	0	0	0	0	0	1	0	0	14	288	0	0	0	0	1	0	0
+fsh-generated/resources/Questionnaire-Questionnaire-IMMZCRegisterClient.json	9286	51	0	0	0	0	0	0	1	51	0	0	0	0	0	0	0	0	0	0	56	267	0	0	0	0	2	0	0
+fsh-generated/resources/ValueSet-IMMZ-D1.DE52.json	854	9	0	0	0	0	0	0	0	183	0	0	0	0	0	0	0	0	0	0	15	123	0	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-IMMZ-D1.json	10092	53	0	0	0	0	0	0	0	58	0	0	0	0	0	0	0	0	0	0	65	221	0	0	0	0	2	0	0
+fsh-generated/resources/CodeSystem-IMMZ-C.json	3292	19	1	0	0	0	0	0	1	26	0	0	0	0	0	0	0	0	0	0	30	112	0	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-IMMZ-C-DE5.json	846	8	0	0	0	0	0	0	0	80	0	0	0	0	0	0	0	0	0	0	15	109	0	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-IMMZ-D1.DE35.json	694	8	0	0	0	0	0	0	0	189	0	0	0	0	0	0	0	0	0	0	13	143	0	0	0	0	8	0	0
+fsh-generated/resources/ConceptMap-IMMZ-D1.ConceptMap.json	18720	119	0	0	0	0	0	0	1	1750	0	0	0	0	0	0	0	1	0	0	140	238	0	0	0	0	3	0	1
+fsh-generated/resources/ConceptMap-IMMZ.C.ConceptMap.json	7409	47	0	0	0	0	0	0	1	1181	0	0	0	0	0	0	0	0	0	0	61	121	0	0	0	0	5	0	0
+fsh-generated/resources/ConceptMap-IMMZ-C-SexToAdministrativeGender.json	2348	17	0	0	0	0	0	0	0	23	0	0	0	0	0	0	0	0	0	0	30	53	0	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-IMMZ-D1.DE84.json	728	8	0	0	0	0	0	0	0	214	0	0	0	0	0	0	0	0	0	0	15	112	0	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-SMARTImplementationGuide.json	1184	79	0	0	0	0	0	9240	1	8661	0	0	1	0	0	0	0	2	0	0	750	3456	0	0	0	0	33	1	2
+fsh-generated/resources/ValueSet-IMMZ-D1.DE10.json	781	18	0	0	0	0	0	0	0	185	0	0	0	0	0	0	0	0	0	0	15	93	0	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-IMMZ-C-register-client.json	11523	1169	0	0	0	0	0	2628	0	2533	0	0	0	0	0	0	0	0	0	0	154	578	0	0	0	0	5	0	0

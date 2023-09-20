@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="IMMZ-D1.DE56"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="http://worldhealthorganization.github.io/smart-immunizations-mini/ValueSet/IMMZ-D1.DE56"/>
+  <version value="0.1.0"/>
+  <name value="IMMZ_D1_DE56"/>
+  <title value="IMMZ-D1.DE56 ValueSet for Type of last TBE dose"/>
+  <status value="active"/>
+  <date value="2023-09-20T16:48:16+00:00"/>
+  <publisher value="WHO"/>
+  <contact>
+    <name value="WHO"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://who.int"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet for Type of last TBE dose for IMMZ-D1.DE56."/>
+  <compose>
+    <include>
+      <system value="http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"/>
+      <concept>
+        <code value="DE57"/>
+        <display value="FSME-Immun"/>
+      </concept>
+      <concept>
+        <code value="DE58"/>
+        <display value="Encepur"/>
+      </concept>
+      <concept>
+        <code value="DE59"/>
+        <display value="TBE-Moscow"/>
+      </concept>
+      <concept>
+        <code value="DE60"/>
+        <display value="EnceVir"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

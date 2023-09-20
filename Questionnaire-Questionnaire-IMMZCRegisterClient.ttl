@@ -1,0 +1,305 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://worldhealthorganization.github.io/smart-immunizations-mini/Questionnaire/Questionnaire-IMMZCRegisterClient> a fhir:Questionnaire ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Questionnaire-IMMZCRegisterClient"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extr-smap"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extr-smap>
+     ] )
+  ] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:contained ( [
+     a fhir:ValueSet ;
+     fhir:id [ fhir:v "IMMZ-C-DE5" ] ;
+     fhir:url [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/ValueSet/IMMZ-C-DE5"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "IMMZ_C_DE5" ] ;
+     fhir:title [ fhir:v "IMMZ-C-DE5 ValueSet for Sex" ] ;
+     fhir:status [ fhir:v "active" ] ;
+     fhir:description [ fhir:v "ValueSet for Sex for IMMZ-C-DE5." ] ;
+     fhir:compose [
+       fhir:include ( [
+         fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-C"^^xsd:anyURI ] ;
+         fhir:concept ( [
+           fhir:code [ fhir:v "DE6" ] ;
+           fhir:display [ fhir:v "Male" ]
+         ] [
+           fhir:code [ fhir:v "DE7" ] ;
+           fhir:display [ fhir:v "Female" ]
+         ] [
+           fhir:code [ fhir:v "DE8" ] ;
+           fhir:display [ fhir:v "Biological sex not specified" ]
+         ] [
+           fhir:code [ fhir:v "DE9" ] ;
+           fhir:display [ fhir:v "Intersex" ]
+         ] )
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/Questionnaire/Questionnaire-IMMZCRegisterClient"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:title [ fhir:v "Client Registration Questionnaire"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:subjectType ( [ fhir:v "Patient"] ) ; # 
+  fhir:date [ fhir:v "2023-09-20T16:48:16+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "WHO"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "WHO" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Immunization - Client Registration Questionnaire"] ; # 
+  fhir:item ( [
+     fhir:linkId [ fhir:v "uniqueId" ] ;
+     fhir:code ( [
+       fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-C"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DE1" ]
+     ] ) ;
+     fhir:text [ fhir:v "Unique identifier for the client" ] ;
+     fhir:type [ fhir:v "string" ] ;
+     fhir:required [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:repeats [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:linkId [ fhir:v "name" ] ;
+     fhir:code ( [
+       fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-C"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DE2" ]
+     ] [
+       a loinc:54125-0 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "54125-0" ] ;
+       fhir:display [ fhir:v "Patient name" ]
+     ] [
+       a sct:371484003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "371484003" ] ;
+       fhir:display [ fhir:v "Patient name (observable entity)" ]
+     ] ) ;
+     fhir:text [ fhir:v "Client name" ] ;
+     fhir:type [ fhir:v "group" ] ;
+     fhir:required [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:repeats [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:item ( [
+       fhir:linkId [ fhir:v "fullName" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE2" ]
+       ] [
+         a loinc:54125-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "54125-0" ] ;
+         fhir:display [ fhir:v "Patient name" ]
+       ] [
+         a sct:371484003 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "371484003" ] ;
+         fhir:display [ fhir:v "Patient name (observable entity)" ]
+       ] ) ;
+       fhir:text [ fhir:v "Full name of the client" ] ;
+       fhir:type [ fhir:v "string" ] ;
+       fhir:required [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:repeats [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:linkId [ fhir:v "firstName" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE3" ]
+       ] [
+         a loinc:45392-8 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "45392-8" ] ;
+         fhir:display [ fhir:v "First name" ]
+       ] [
+         a sct:184095009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "184095009" ] ;
+         fhir:display [ fhir:v "Patient forename (observable entity)" ]
+       ] ) ;
+       fhir:text [ fhir:v "First or given name" ] ;
+       fhir:type [ fhir:v "string" ] ;
+       fhir:required [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:repeats [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:linkId [ fhir:v "familyName" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE4" ]
+       ] [
+         a loinc:45394-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "45394-4" ] ;
+         fhir:display [ fhir:v "Last name" ]
+       ] [
+         a sct:184096005 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "184096005" ] ;
+         fhir:display [ fhir:v "Patient surname (observable entity)" ]
+       ] ) ;
+       fhir:text [ fhir:v "Family name" ] ;
+       fhir:type [ fhir:v "string" ] ;
+       fhir:required [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:repeats [ fhir:v "false"^^xsd:boolean ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "sex" ] ;
+     fhir:code ( [
+       fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-C"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DE5" ]
+     ] [
+       a loinc:46098-0 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "46098-0" ] ;
+       fhir:display [ fhir:v "Sex" ]
+     ] [
+       a sct:184100006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "184100006" ] ;
+       fhir:display [ fhir:v "Patient sex (observable entity)" ]
+     ] ) ;
+     fhir:text [ fhir:v "Sex" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:required [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:repeats [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:answerValueSet [
+       fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/ValueSet/IMMZ-C-DE5"^^xsd:anyURI ;
+       fhir:link <http://worldhealthorganization.github.io/smart-immunizations-mini/ValueSet/IMMZ-C-DE5>
+     ]
+  ] [
+     fhir:linkId [ fhir:v "birthDate" ] ;
+     fhir:code ( [
+       fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-C"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DE10" ]
+     ] [
+       a loinc:21112-8 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "21112-8" ] ;
+       fhir:display [ fhir:v "Birth date" ]
+     ] [
+       a sct:184099003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "184099003" ] ;
+       fhir:display [ fhir:v "Date of birth (observable entity)" ]
+     ] ) ;
+     fhir:text [ fhir:v "Birth Date" ] ;
+     fhir:type [ fhir:v "date" ] ;
+     fhir:required [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:repeats [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:linkId [ fhir:v "caregiver" ] ;
+     fhir:code ( [
+       fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-C"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DE14" ]
+     ] [
+       a sct:184140000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "184140000" ] ;
+       fhir:display [ fhir:v "Caregiver details (observable entity)" ]
+     ] ) ;
+     fhir:text [ fhir:v "Care giver name" ] ;
+     fhir:type [ fhir:v "group" ] ;
+     fhir:required [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:repeats [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:item ( [
+       fhir:linkId [ fhir:v "fullName" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE15" ]
+       ] [
+         a sct:184140000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "184140000" ] ;
+         fhir:display [ fhir:v "Caregiver details (observable entity)" ]
+       ] ) ;
+       fhir:text [ fhir:v "Full name of the care giver" ] ;
+       fhir:type [ fhir:v "string" ] ;
+       fhir:required [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:repeats [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:linkId [ fhir:v "firstName" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE16" ]
+       ] ) ;
+       fhir:text [ fhir:v "First or given name" ] ;
+       fhir:type [ fhir:v "string" ] ;
+       fhir:required [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:repeats [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:linkId [ fhir:v "familyName" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE17" ]
+       ] ) ;
+       fhir:text [ fhir:v "Family name" ] ;
+       fhir:type [ fhir:v "string" ] ;
+       fhir:required [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:repeats [ fhir:v "false"^^xsd:boolean ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "phone" ] ;
+     fhir:code ( [
+       fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-C"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DE18" ]
+     ] [
+       a loinc:42077-8 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "42077-8" ] ;
+       fhir:display [ fhir:v "Patient Phone number" ]
+     ] [
+       a sct:184103008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "184103008" ] ;
+       fhir:display [ fhir:v "Patient telephone number (observable entity)" ]
+     ] ) ;
+     fhir:text [ fhir:v "Client Phone number" ] ;
+     fhir:type [ fhir:v "string" ] ;
+     fhir:required [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:repeats [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:linkId [ fhir:v "administrativeArea" ] ;
+     fhir:code ( [
+       fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-C"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DE19" ]
+     ] [
+       a loinc:56799-0 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "56799-0" ] ;
+       fhir:display [ fhir:v "Address" ]
+     ] [
+       a sct:184097001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "184097001" ] ;
+       fhir:display [ fhir:v "Patient address (observable entity)" ]
+     ] ) ;
+     fhir:text [ fhir:v "Administrative area" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:required [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:repeats [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:linkId [ fhir:v "healthWorker" ] ;
+     fhir:code ( [
+       fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-C"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DE20" ]
+     ] ) ;
+     fhir:text [ fhir:v "Health Worker" ] ;
+     fhir:type [ fhir:v "boolean" ] ;
+     fhir:required [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:repeats [ fhir:v "false"^^xsd:boolean ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

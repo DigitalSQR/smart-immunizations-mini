@@ -1,0 +1,35 @@
+﻿SMART : Validation Results
+=========================================
+
+err = 1, warn = 5, info = 1
+IG Publisher Version: 1.4.0
+Generated Wed Aug 23 17:48:47 UTC 2023. FHIR version 4.0.1 for smart-immunizations-mini#0.1.0 (canonical = http://worldhealthorganization.github.io/smart-immunizations-mini)
+ Build Errors : 11 / 5 / 0
+ /github/workspace/fsh-generated/resources/ImplementationGuide-smart-immunizations-mini : 1 / 0 / 2
+ /github/workspace/fsh-generated/resources/Patient-PatientExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MyPatient : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-SMARTImplementationGuide : 0 / 0 / 2
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/SMARTImplementationGuide.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/decision-logic.html#/html/body/div/div/div/div/div/table/thead/tr/th/a at Line 249, column 12: The link 'concepts.html#number-of-birth-doses-administered' for "Number of birth doses administered" cannot be resolved (valid targets: [ig-status, segment-header, top, concepts, publish-box, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])
+ERROR: /github/workspace/output/decision-logic.html#/html/body/div/div/div/div/div/table/thead/tr/th/a at Line 250, column 12: The link 'concepts.html#age-in-months' for "Age in Months" cannot be resolved (valid targets: [ig-status, segment-header, top, concepts, publish-box, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])
+ERROR: /github/workspace/output/decision-logic.html#/html/body/div/div/div/div/div/table/thead/tr/th/a at Line 251, column 12: The link 'concepts.html#number-of-weeks-since-last-dose' for "Number of weeks since last dose" cannot be resolved (valid targets: [ig-status, segment-header, top, concepts, publish-box, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])
+ERROR: /github/workspace/output/decision-logic.html#/html/body/div/div/div/div/div/table/thead/tr/th/a at Line 252, column 12: The link 'concepts.html#number-of-doses-administered' for "Number of doses administered" cannot be resolved (valid targets: [ig-status, segment-header, top, concepts, publish-box, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])
+ERROR: /github/workspace/output/decision-logic.html#/html/body/div/div/div/div/div/table/thead/tr/th/a at Line 253, column 12: The link 'concepts.html#hiv-status' for "HIV status" cannot be resolved (valid targets: [ig-status, segment-header, top, concepts, publish-box, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])
+ERROR: /github/workspace/output/decision-logic.html#/html/body/div/div/div/div/div/table/thead/tr/th/a at Line 254, column 12: The link 'concepts.html#patient-is-currently-receiving-art' for "Patient is currently receiving ART" cannot be resolved (valid targets: [ig-status, segment-header, top, concepts, publish-box, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])
+ERROR: /github/workspace/output/decision-logic.html#/html/body/div/div/div/div/div/table/thead/tr/th/a at Line 255, column 12: The link 'concepts.html#patient-is-currently-pregnant' for "Patient is currently pregnant" cannot be resolved (valid targets: [ig-status, segment-header, top, concepts, publish-box, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])
+ERROR: /github/workspace/output/decision-logic.html#/html/body/div/div/div/div/div/table/thead/tr/th/a at Line 256, column 12: The link 'concepts.html#immune-reconstitution-was-achieved' for "Immune reconstitution was achieved" cannot be resolved (valid targets: [ig-status, segment-header, top, concepts, publish-box, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])
+ERROR: /github/workspace/output/decision-logic.html#/html/body/div/div/div/div/div/table/thead/tr/th/a at Line 257, column 12: The link 'concepts.html#cd4+-t-lymphocyte-monitoring-is-available' for "CD4+ T Lymphocyte monitoring is available" cannot be resolved (valid targets: [ig-status, segment-header, top, concepts, publish-box, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])
+ERROR: /github/workspace/output/decision-logic.html#/html/body/div/div/div/div/div/table/thead/tr/th/a at Line 258, column 12: The link 'concepts.html#number-of-months-since-haart-was-initiated' for "Number of months since HAART was initiated" cannot be resolved (valid targets: [ig-status, segment-header, top, concepts, publish-box, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])
+ERROR: /github/workspace/output/decision-logic.html#/html/body/div/div/div/div/div/table/thead/tr/th/a at Line 259, column 12: The link 'concepts.html#current-vaccination-status' for "Current vaccination status" cannot be resolved (valid targets: [ig-status, segment-header, top, concepts, publish-box, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ImplementationGuide-smart-immunizations-mini.json ==
+ERROR: ImplementationGuide/smart-immunizations-mini: ImplementationGuide.license: Value is 'CC0-1.0' but must be 'CC-BY-SA-3.0-IGO'
+== fsh-generated/resources/Patient-PatientExample.json ==
+== fsh-generated/resources/StructureDefinition-MyPatient.json ==
+== fsh-generated/resources/StructureDefinition-SMARTImplementationGuide.json ==
+INFORMATION: StructureDefinition.where(url = 'http://worldhealthorganization.github.io/smart-immunizations-mini/StructureDefinition/SMARTImplementationGuide'): The Implementation Guide contains no explicitly linked examples for this profile

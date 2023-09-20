@@ -1,0 +1,44 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "IMMZ-C-DE5",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "http://worldhealthorganization.github.io/smart-immunizations-mini/ValueSet/IMMZ-C-DE5",
+  "version" : "0.1.0",
+  "name" : "IMMZ_C_DE5",
+  "title" : "IMMZ-C-DE5 ValueSet for Sex",
+  "status" : "active",
+  "date" : "2023-09-20T16:48:16+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    }]
+  }],
+  "description" : "ValueSet for Sex for IMMZ-C-DE5.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-C",
+      "concept" : [{
+        "code" : "DE6",
+        "display" : "Male"
+      },
+      {
+        "code" : "DE7",
+        "display" : "Female"
+      },
+      {
+        "code" : "DE8",
+        "display" : "Biological sex not specified"
+      },
+      {
+        "code" : "DE9",
+        "display" : "Intersex"
+      }]
+    }]
+  }
+}

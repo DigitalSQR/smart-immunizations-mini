@@ -1,0 +1,521 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "IMMZ-D1-client-history-measles",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "http://worldhealthorganization.github.io/smart-immunizations-mini/StructureDefinition/IMMZ-D1-client-history-measles",
+  "version" : "0.1.0",
+  "name" : "IMMZ_D1_Client_History_Measles",
+  "title" : "IMMZ-D1 Capture Client History for Measles",
+  "status" : "draft",
+  "date" : "2023-09-20T16:48:16+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    }]
+  }],
+  "description" : "Data elements for the IMMZ-D1 Capture Client History Data Dictionary for Measles.",
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "logical",
+  "abstract" : false,
+  "type" : "http://worldhealthorganization.github.io/smart-immunizations-mini/StructureDefinition/IMMZ-D1-client-history-measles",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "derivation" : "specialization",
+  "snapshot" : {
+    "element" : [{
+      "id" : "IMMZ-D1-client-history-measles",
+      "path" : "IMMZ-D1-client-history-measles",
+      "short" : "IMMZ-D1 Capture Client History for Measles",
+      "definition" : "Data elements for the IMMZ-D1 Capture Client History Data Dictionary for Measles.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Base",
+        "min" : 0,
+        "max" : "*"
+      },
+      "isModifier" : false
+    },
+    {
+      "id" : "IMMZ-D1-client-history-measles.dose0",
+      "path" : "IMMZ-D1-client-history-measles.dose0",
+      "code" : [{
+        "system" : "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1",
+        "code" : "DE80"
+      }],
+      "short" : "Dose 0 administered",
+      "definition" : "Indicates if the client has received a birth dose and/or supplementary dose",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "IMMZ-D1-client-history-measles.dose0",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "IMMZ-D1-client-history-measles.completedPrimarySeries",
+      "path" : "IMMZ-D1-client-history-measles.completedPrimarySeries",
+      "code" : [{
+        "system" : "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1",
+        "code" : "DE8"
+      }],
+      "short" : "Completed the primary vaccination series",
+      "definition" : "Indicates if the client has completed the primary vaccination series of a product/antigen. If the client has not yet completed their primary series, it means they may be expected to receive more doses to complete their vaccination regimen for the respective product/antigen.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "IMMZ-D1-client-history-measles.completedPrimarySeries",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "IMMZ-D1-client-history-measles.dateSeriesCompleted",
+      "path" : "IMMZ-D1-client-history-measles.dateSeriesCompleted",
+      "code" : [{
+        "system" : "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1",
+        "code" : "DE81"
+      }],
+      "short" : "Date when primary vaccination series was completed",
+      "definition" : "The date when the client completed the primary vaccination series (per product/antigen)",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "IMMZ-D1-client-history-measles.dateSeriesCompleted",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "IMMZ-D1-client-history-measles.pregnant",
+      "path" : "IMMZ-D1-client-history-measles.pregnant",
+      "code" : [{
+        "system" : "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1",
+        "code" : "DE9"
+      }],
+      "short" : "Currently pregnant",
+      "definition" : "The client is currently pregnant",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "IMMZ-D1-client-history-measles.pregnant",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "IMMZ-D1-client-history-measles.breastfeeding",
+      "path" : "IMMZ-D1-client-history-measles.breastfeeding",
+      "code" : [{
+        "system" : "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1",
+        "code" : "DE82"
+      }],
+      "short" : "Breastfeeding",
+      "definition" : "The client is currently breastfeeding",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "IMMZ-D1-client-history-measles.breastfeeding",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "IMMZ-D1-client-history-measles.hivStatus",
+      "path" : "IMMZ-D1-client-history-measles.hivStatus",
+      "code" : [{
+        "system" : "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1",
+        "code" : "DE10"
+      }],
+      "short" : "HIV status",
+      "definition" : "The current human immunodeficiency virus (HIV) status of the client",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "IMMZ-D1-client-history-measles.hivStatus",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://worldhealthorganization.github.io/smart-immunizations-mini/ValueSet/IMMZ-D1.DE10"
+      }
+    },
+    {
+      "id" : "IMMZ-D1-client-history-measles.pretermBirth",
+      "path" : "IMMZ-D1-client-history-measles.pretermBirth",
+      "code" : [{
+        "system" : "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1",
+        "code" : "DE15"
+      }],
+      "short" : "Preterm birth",
+      "definition" : "The infant was preterm, the mother gave birth to the infant when gestational age was less than 37 weeks",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "IMMZ-D1-client-history-measles.pretermBirth",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "IMMZ-D1-client-history-measles.immunocompromised",
+      "path" : "IMMZ-D1-client-history-measles.immunocompromised",
+      "code" : [{
+        "system" : "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1",
+        "code" : "DE16"
+      }],
+      "short" : "Immunocompromised",
+      "definition" : "The client is known to be immunocompromised or immunosuppressed. This means the client has a weakened immune system and having a reduced ability to fight infections and other diseases",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "IMMZ-D1-client-history-measles.immunocompromised",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "IMMZ-D1-client-history-measles.onART",
+      "path" : "IMMZ-D1-client-history-measles.onART",
+      "code" : [{
+        "system" : "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1",
+        "code" : "DE17"
+      }],
+      "short" : "Currently on ART",
+      "definition" : "The client is currently receiving antiretroviral therapy (ART)",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "IMMZ-D1-client-history-measles.onART",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "IMMZ-D1-client-history-measles.hivExposedInfant",
+      "path" : "IMMZ-D1-client-history-measles.hivExposedInfant",
+      "code" : [{
+        "system" : "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1",
+        "code" : "DE90"
+      }],
+      "short" : "HIV-exposed infant",
+      "definition" : "The infant is known to be exposed to HIV (i.e. born to an HIV-infected woman)",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "IMMZ-D1-client-history-measles.hivExposedInfant",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "IMMZ-D1-client-history-measles.immuneReconstitutionAchieved",
+      "path" : "IMMZ-D1-client-history-measles.immuneReconstitutionAchieved",
+      "code" : [{
+        "system" : "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1",
+        "code" : "DE46"
+      }],
+      "short" : "Immune reconstitution was achieved",
+      "definition" : "The client is known to have achieved immune reconstitution",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "IMMZ-D1-client-history-measles.immuneReconstitutionAchieved",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "IMMZ-D1-client-history-measles.severelyImmunosuppressed",
+      "path" : "IMMZ-D1-client-history-measles.severelyImmunosuppressed",
+      "code" : [{
+        "system" : "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1",
+        "code" : "DE92"
+      }],
+      "short" : "Severely immunosuppressed",
+      "definition" : "The client is known to be severely immunocompromised or immunosuppressed",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "IMMZ-D1-client-history-measles.severelyImmunosuppressed",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "IMMZ-D1-client-history-measles.artStartDate",
+      "path" : "IMMZ-D1-client-history-measles.artStartDate",
+      "code" : [{
+        "system" : "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1",
+        "code" : "DE49"
+      }],
+      "short" : "ART start date",
+      "definition" : "The date on which the client started or restarted antiretroviral therapy (ART)",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "IMMZ-D1-client-history-measles.artStartDate",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "date"
+      }]
+    }]
+  },
+  "differential" : {
+    "element" : [{
+      "id" : "IMMZ-D1-client-history-measles",
+      "path" : "IMMZ-D1-client-history-measles",
+      "short" : "IMMZ-D1 Capture Client History for Measles",
+      "definition" : "Data elements for the IMMZ-D1 Capture Client History Data Dictionary for Measles."
+    },
+    {
+      "id" : "IMMZ-D1-client-history-measles.dose0",
+      "path" : "IMMZ-D1-client-history-measles.dose0",
+      "code" : [{
+        "system" : "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1",
+        "code" : "DE80"
+      }],
+      "short" : "Dose 0 administered",
+      "definition" : "Indicates if the client has received a birth dose and/or supplementary dose",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "IMMZ-D1-client-history-measles.completedPrimarySeries",
+      "path" : "IMMZ-D1-client-history-measles.completedPrimarySeries",
+      "code" : [{
+        "system" : "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1",
+        "code" : "DE8"
+      }],
+      "short" : "Completed the primary vaccination series",
+      "definition" : "Indicates if the client has completed the primary vaccination series of a product/antigen. If the client has not yet completed their primary series, it means they may be expected to receive more doses to complete their vaccination regimen for the respective product/antigen.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "IMMZ-D1-client-history-measles.dateSeriesCompleted",
+      "path" : "IMMZ-D1-client-history-measles.dateSeriesCompleted",
+      "code" : [{
+        "system" : "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1",
+        "code" : "DE81"
+      }],
+      "short" : "Date when primary vaccination series was completed",
+      "definition" : "The date when the client completed the primary vaccination series (per product/antigen)",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "IMMZ-D1-client-history-measles.pregnant",
+      "path" : "IMMZ-D1-client-history-measles.pregnant",
+      "code" : [{
+        "system" : "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1",
+        "code" : "DE9"
+      }],
+      "short" : "Currently pregnant",
+      "definition" : "The client is currently pregnant",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "IMMZ-D1-client-history-measles.breastfeeding",
+      "path" : "IMMZ-D1-client-history-measles.breastfeeding",
+      "code" : [{
+        "system" : "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1",
+        "code" : "DE82"
+      }],
+      "short" : "Breastfeeding",
+      "definition" : "The client is currently breastfeeding",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "IMMZ-D1-client-history-measles.hivStatus",
+      "path" : "IMMZ-D1-client-history-measles.hivStatus",
+      "code" : [{
+        "system" : "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1",
+        "code" : "DE10"
+      }],
+      "short" : "HIV status",
+      "definition" : "The current human immunodeficiency virus (HIV) status of the client",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://worldhealthorganization.github.io/smart-immunizations-mini/ValueSet/IMMZ-D1.DE10"
+      }
+    },
+    {
+      "id" : "IMMZ-D1-client-history-measles.pretermBirth",
+      "path" : "IMMZ-D1-client-history-measles.pretermBirth",
+      "code" : [{
+        "system" : "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1",
+        "code" : "DE15"
+      }],
+      "short" : "Preterm birth",
+      "definition" : "The infant was preterm, the mother gave birth to the infant when gestational age was less than 37 weeks",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "IMMZ-D1-client-history-measles.immunocompromised",
+      "path" : "IMMZ-D1-client-history-measles.immunocompromised",
+      "code" : [{
+        "system" : "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1",
+        "code" : "DE16"
+      }],
+      "short" : "Immunocompromised",
+      "definition" : "The client is known to be immunocompromised or immunosuppressed. This means the client has a weakened immune system and having a reduced ability to fight infections and other diseases",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "IMMZ-D1-client-history-measles.onART",
+      "path" : "IMMZ-D1-client-history-measles.onART",
+      "code" : [{
+        "system" : "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1",
+        "code" : "DE17"
+      }],
+      "short" : "Currently on ART",
+      "definition" : "The client is currently receiving antiretroviral therapy (ART)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "IMMZ-D1-client-history-measles.hivExposedInfant",
+      "path" : "IMMZ-D1-client-history-measles.hivExposedInfant",
+      "code" : [{
+        "system" : "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1",
+        "code" : "DE90"
+      }],
+      "short" : "HIV-exposed infant",
+      "definition" : "The infant is known to be exposed to HIV (i.e. born to an HIV-infected woman)",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "IMMZ-D1-client-history-measles.immuneReconstitutionAchieved",
+      "path" : "IMMZ-D1-client-history-measles.immuneReconstitutionAchieved",
+      "code" : [{
+        "system" : "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1",
+        "code" : "DE46"
+      }],
+      "short" : "Immune reconstitution was achieved",
+      "definition" : "The client is known to have achieved immune reconstitution",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "IMMZ-D1-client-history-measles.severelyImmunosuppressed",
+      "path" : "IMMZ-D1-client-history-measles.severelyImmunosuppressed",
+      "code" : [{
+        "system" : "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1",
+        "code" : "DE92"
+      }],
+      "short" : "Severely immunosuppressed",
+      "definition" : "The client is known to be severely immunocompromised or immunosuppressed",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "IMMZ-D1-client-history-measles.artStartDate",
+      "path" : "IMMZ-D1-client-history-measles.artStartDate",
+      "code" : [{
+        "system" : "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1",
+        "code" : "DE49"
+      }],
+      "short" : "ART start date",
+      "definition" : "The date on which the client started or restarted antiretroviral therapy (ART)",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "date"
+      }]
+    }]
+  }
+}

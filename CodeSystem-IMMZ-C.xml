@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="IMMZ-C"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-C"/>
+  <version value="0.1.0"/>
+  <name value="IMMZ_C"/>
+  <title value="IMMZ-C CodeSystem for Data Elements"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-09-20T16:48:16+00:00"/>
+  <publisher value="WHO"/>
+  <contact>
+    <name value="WHO"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://who.int"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem for IMMZ.C Data Elements"/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="18"/>
+  <concept>
+    <code value="DE1"/>
+    <display value="Unique identifier"/>
+    <definition value="Unique identifier for the client, according to the policies applicable to each country. There can be more than one unique identifier used to link records (e.g. national ID, health ID, immunization information system ID, medical record ID)."/>
+  </concept>
+  <concept>
+    <code value="DE2"/>
+    <display value="Name"/>
+    <definition value="The full name of the client"/>
+  </concept>
+  <concept>
+    <code value="DE3"/>
+    <display value="First name"/>
+    <definition value="Client's first name or given name"/>
+  </concept>
+  <concept>
+    <code value="DE4"/>
+    <display value="Family name"/>
+    <definition value="Client's family name or last name"/>
+  </concept>
+  <concept>
+    <code value="DE5"/>
+    <display value="Sex"/>
+    <definition value="Documentation of a specific instance of sex information for the client"/>
+  </concept>
+  <concept>
+    <code value="DE6"/>
+    <display value="Male"/>
+    <definition value="Client's biological sex is male"/>
+  </concept>
+  <concept>
+    <code value="DE7"/>
+    <display value="Female"/>
+    <definition value="Client's biological sex is female"/>
+  </concept>
+  <concept>
+    <code value="DE8"/>
+    <display value="Biological sex not specified"/>
+    <definition value="Client's biological sex is not specified"/>
+  </concept>
+  <concept>
+    <code value="DE9"/>
+    <display value="Intersex"/>
+    <definition value="Client's biological sex is intersex"/>
+  </concept>
+  <concept>
+    <code value="DE10"/>
+    <display value="Date of birth"/>
+    <definition value="Client's date of birth (DOB) if known; if unknown, use assigned DOB for administrative purposes"/>
+  </concept>
+  <concept>
+    <code value="DE13"/>
+    <display value="Age"/>
+    <definition value="The client's calculated age (presented as number of years, months, days) based on the date of birth (DOB) and the visit date"/>
+  </concept>
+  <concept>
+    <code value="DE14"/>
+    <display value="Caregivers (multiple)"/>
+    <definition value="The client's caregiver (person) which could be next of kin (e.g. partner, husband, mother, sibling, etc.)"/>
+  </concept>
+  <concept>
+    <code value="DE15"/>
+    <display value="Caregiver's full name"/>
+    <definition value="The full name of the client's caregiver"/>
+  </concept>
+  <concept>
+    <code value="DE16"/>
+    <display value="Caregiver's first name"/>
+    <definition value="First or given name of the client's caregiver"/>
+  </concept>
+  <concept>
+    <code value="DE17"/>
+    <display value="Caregiver's family name"/>
+    <definition value="Family name or last name of the client's caregiver"/>
+  </concept>
+  <concept>
+    <code value="DE18"/>
+    <display value="Contact phone number"/>
+    <definition value="Client's phone number"/>
+  </concept>
+  <concept>
+    <code value="DE19"/>
+    <display value="Administrative area"/>
+    <definition value="The name of the city/municipality/town/village of where the client lives"/>
+  </concept>
+  <concept>
+    <code value="DE20"/>
+    <display value="Active health worker"/>
+    <definition value="Is the client an active and participating health worker. This data element is used mainly for reporting and indicators purposes."/>
+  </concept>
+</CodeSystem>

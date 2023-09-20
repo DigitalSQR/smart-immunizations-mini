@@ -1,0 +1,40 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "IMMZ-D1.DE52",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "http://worldhealthorganization.github.io/smart-immunizations-mini/ValueSet/IMMZ-D1.DE52",
+  "version" : "0.1.0",
+  "name" : "IMMZ_D1_DE52",
+  "title" : "IMMZ-D1.DE52 ValueSet for Type of last JE dose",
+  "status" : "active",
+  "date" : "2023-09-20T16:48:16+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    }]
+  }],
+  "description" : "ValueSet for Type of last JE dose for IMMZ-D1.DE52.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1",
+      "concept" : [{
+        "code" : "DE53",
+        "display" : "Inactivated Vero cell-derived vaccine"
+      },
+      {
+        "code" : "DE54",
+        "display" : "Live attenuated vaccine"
+      },
+      {
+        "code" : "DE55",
+        "display" : "Live recombinant vaccine"
+      }]
+    }]
+  }
+}

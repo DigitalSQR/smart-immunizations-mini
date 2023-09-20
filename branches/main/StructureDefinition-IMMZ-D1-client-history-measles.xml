@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="IMMZ-D1-client-history-measles"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="http://worldhealthorganization.github.io/smart-immunizations-mini/StructureDefinition/IMMZ-D1-client-history-measles"/>
+  <version value="0.1.0"/>
+  <name value="IMMZ_D1_Client_History_Measles"/>
+  <title value="IMMZ-D1 Capture Client History for Measles"/>
+  <status value="draft"/>
+  <date value="2023-09-20T16:48:16+00:00"/>
+  <publisher value="WHO"/>
+  <contact>
+    <name value="WHO"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://who.int"/>
+    </telecom>
+  </contact>
+  <description value="Data elements for the IMMZ-D1 Capture Client History Data Dictionary for Measles."/>
+  <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="http://worldhealthorganization.github.io/smart-immunizations-mini/StructureDefinition/IMMZ-D1-client-history-measles"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <element id="IMMZ-D1-client-history-measles">
+      <path value="IMMZ-D1-client-history-measles"/>
+      <short value="IMMZ-D1 Capture Client History for Measles"/>
+      <definition value="Data elements for the IMMZ-D1 Capture Client History Data Dictionary for Measles."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+    </element>
+    <element id="IMMZ-D1-client-history-measles.dose0">
+      <path value="IMMZ-D1-client-history-measles.dose0"/>
+      <code>
+        <system value="http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"/>
+        <code value="DE80"/>
+      </code>
+      <short value="Dose 0 administered"/>
+      <definition value="Indicates if the client has received a birth dose and/or supplementary dose"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZ-D1-client-history-measles.dose0"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="IMMZ-D1-client-history-measles.completedPrimarySeries">
+      <path value="IMMZ-D1-client-history-measles.completedPrimarySeries"/>
+      <code>
+        <system value="http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"/>
+        <code value="DE8"/>
+      </code>
+      <short value="Completed the primary vaccination series"/>
+      <definition value="Indicates if the client has completed the primary vaccination series of a product/antigen. If the client has not yet completed their primary series, it means they may be expected to receive more doses to complete their vaccination regimen for the respective product/antigen."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZ-D1-client-history-measles.completedPrimarySeries"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="IMMZ-D1-client-history-measles.dateSeriesCompleted">
+      <path value="IMMZ-D1-client-history-measles.dateSeriesCompleted"/>
+      <code>
+        <system value="http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"/>
+        <code value="DE81"/>
+      </code>
+      <short value="Date when primary vaccination series was completed"/>
+      <definition value="The date when the client completed the primary vaccination series (per product/antigen)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZ-D1-client-history-measles.dateSeriesCompleted"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+    <element id="IMMZ-D1-client-history-measles.pregnant">
+      <path value="IMMZ-D1-client-history-measles.pregnant"/>
+      <code>
+        <system value="http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"/>
+        <code value="DE9"/>
+      </code>
+      <short value="Currently pregnant"/>
+      <definition value="The client is currently pregnant"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZ-D1-client-history-measles.pregnant"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="IMMZ-D1-client-history-measles.breastfeeding">
+      <path value="IMMZ-D1-client-history-measles.breastfeeding"/>
+      <code>
+        <system value="http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"/>
+        <code value="DE82"/>
+      </code>
+      <short value="Breastfeeding"/>
+      <definition value="The client is currently breastfeeding"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZ-D1-client-history-measles.breastfeeding"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="IMMZ-D1-client-history-measles.hivStatus">
+      <path value="IMMZ-D1-client-history-measles.hivStatus"/>
+      <code>
+        <system value="http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"/>
+        <code value="DE10"/>
+      </code>
+      <short value="HIV status"/>
+      <definition value="The current human immunodeficiency virus (HIV) status of the client"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZ-D1-client-history-measles.hivStatus"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://worldhealthorganization.github.io/smart-immunizations-mini/ValueSet/IMMZ-D1.DE10"/>
+      </binding>
+    </element>
+    <element id="IMMZ-D1-client-history-measles.pretermBirth">
+      <path value="IMMZ-D1-client-history-measles.pretermBirth"/>
+      <code>
+        <system value="http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"/>
+        <code value="DE15"/>
+      </code>
+      <short value="Preterm birth"/>
+      <definition value="The infant was preterm, the mother gave birth to the infant when gestational age was less than 37 weeks"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZ-D1-client-history-measles.pretermBirth"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="IMMZ-D1-client-history-measles.immunocompromised">
+      <path value="IMMZ-D1-client-history-measles.immunocompromised"/>
+      <code>
+        <system value="http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"/>
+        <code value="DE16"/>
+      </code>
+      <short value="Immunocompromised"/>
+      <definition value="The client is known to be immunocompromised or immunosuppressed. This means the client has a weakened immune system and having a reduced ability to fight infections and other diseases"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZ-D1-client-history-measles.immunocompromised"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="IMMZ-D1-client-history-measles.onART">
+      <path value="IMMZ-D1-client-history-measles.onART"/>
+      <code>
+        <system value="http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"/>
+        <code value="DE17"/>
+      </code>
+      <short value="Currently on ART"/>
+      <definition value="The client is currently receiving antiretroviral therapy (ART)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZ-D1-client-history-measles.onART"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="IMMZ-D1-client-history-measles.hivExposedInfant">
+      <path value="IMMZ-D1-client-history-measles.hivExposedInfant"/>
+      <code>
+        <system value="http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"/>
+        <code value="DE90"/>
+      </code>
+      <short value="HIV-exposed infant"/>
+      <definition value="The infant is known to be exposed to HIV (i.e. born to an HIV-infected woman)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZ-D1-client-history-measles.hivExposedInfant"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="IMMZ-D1-client-history-measles.immuneReconstitutionAchieved">
+      <path value="IMMZ-D1-client-history-measles.immuneReconstitutionAchieved"/>
+      <code>
+        <system value="http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"/>
+        <code value="DE46"/>
+      </code>
+      <short value="Immune reconstitution was achieved"/>
+      <definition value="The client is known to have achieved immune reconstitution"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZ-D1-client-history-measles.immuneReconstitutionAchieved"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="IMMZ-D1-client-history-measles.severelyImmunosuppressed">
+      <path value="IMMZ-D1-client-history-measles.severelyImmunosuppressed"/>
+      <code>
+        <system value="http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"/>
+        <code value="DE92"/>
+      </code>
+      <short value="Severely immunosuppressed"/>
+      <definition value="The client is known to be severely immunocompromised or immunosuppressed"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZ-D1-client-history-measles.severelyImmunosuppressed"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="IMMZ-D1-client-history-measles.artStartDate">
+      <path value="IMMZ-D1-client-history-measles.artStartDate"/>
+      <code>
+        <system value="http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"/>
+        <code value="DE49"/>
+      </code>
+      <short value="ART start date"/>
+      <definition value="The date on which the client started or restarted antiretroviral therapy (ART)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZ-D1-client-history-measles.artStartDate"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="IMMZ-D1-client-history-measles">
+      <path value="IMMZ-D1-client-history-measles"/>
+      <short value="IMMZ-D1 Capture Client History for Measles"/>
+      <definition value="Data elements for the IMMZ-D1 Capture Client History Data Dictionary for Measles."/>
+    </element>
+    <element id="IMMZ-D1-client-history-measles.dose0">
+      <path value="IMMZ-D1-client-history-measles.dose0"/>
+      <code>
+        <system value="http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"/>
+        <code value="DE80"/>
+      </code>
+      <short value="Dose 0 administered"/>
+      <definition value="Indicates if the client has received a birth dose and/or supplementary dose"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="IMMZ-D1-client-history-measles.completedPrimarySeries">
+      <path value="IMMZ-D1-client-history-measles.completedPrimarySeries"/>
+      <code>
+        <system value="http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"/>
+        <code value="DE8"/>
+      </code>
+      <short value="Completed the primary vaccination series"/>
+      <definition value="Indicates if the client has completed the primary vaccination series of a product/antigen. If the client has not yet completed their primary series, it means they may be expected to receive more doses to complete their vaccination regimen for the respective product/antigen."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="IMMZ-D1-client-history-measles.dateSeriesCompleted">
+      <path value="IMMZ-D1-client-history-measles.dateSeriesCompleted"/>
+      <code>
+        <system value="http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"/>
+        <code value="DE81"/>
+      </code>
+      <short value="Date when primary vaccination series was completed"/>
+      <definition value="The date when the client completed the primary vaccination series (per product/antigen)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+    <element id="IMMZ-D1-client-history-measles.pregnant">
+      <path value="IMMZ-D1-client-history-measles.pregnant"/>
+      <code>
+        <system value="http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"/>
+        <code value="DE9"/>
+      </code>
+      <short value="Currently pregnant"/>
+      <definition value="The client is currently pregnant"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="IMMZ-D1-client-history-measles.breastfeeding">
+      <path value="IMMZ-D1-client-history-measles.breastfeeding"/>
+      <code>
+        <system value="http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"/>
+        <code value="DE82"/>
+      </code>
+      <short value="Breastfeeding"/>
+      <definition value="The client is currently breastfeeding"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="IMMZ-D1-client-history-measles.hivStatus">
+      <path value="IMMZ-D1-client-history-measles.hivStatus"/>
+      <code>
+        <system value="http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"/>
+        <code value="DE10"/>
+      </code>
+      <short value="HIV status"/>
+      <definition value="The current human immunodeficiency virus (HIV) status of the client"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://worldhealthorganization.github.io/smart-immunizations-mini/ValueSet/IMMZ-D1.DE10"/>
+      </binding>
+    </element>
+    <element id="IMMZ-D1-client-history-measles.pretermBirth">
+      <path value="IMMZ-D1-client-history-measles.pretermBirth"/>
+      <code>
+        <system value="http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"/>
+        <code value="DE15"/>
+      </code>
+      <short value="Preterm birth"/>
+      <definition value="The infant was preterm, the mother gave birth to the infant when gestational age was less than 37 weeks"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="IMMZ-D1-client-history-measles.immunocompromised">
+      <path value="IMMZ-D1-client-history-measles.immunocompromised"/>
+      <code>
+        <system value="http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"/>
+        <code value="DE16"/>
+      </code>
+      <short value="Immunocompromised"/>
+      <definition value="The client is known to be immunocompromised or immunosuppressed. This means the client has a weakened immune system and having a reduced ability to fight infections and other diseases"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="IMMZ-D1-client-history-measles.onART">
+      <path value="IMMZ-D1-client-history-measles.onART"/>
+      <code>
+        <system value="http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"/>
+        <code value="DE17"/>
+      </code>
+      <short value="Currently on ART"/>
+      <definition value="The client is currently receiving antiretroviral therapy (ART)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="IMMZ-D1-client-history-measles.hivExposedInfant">
+      <path value="IMMZ-D1-client-history-measles.hivExposedInfant"/>
+      <code>
+        <system value="http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"/>
+        <code value="DE90"/>
+      </code>
+      <short value="HIV-exposed infant"/>
+      <definition value="The infant is known to be exposed to HIV (i.e. born to an HIV-infected woman)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="IMMZ-D1-client-history-measles.immuneReconstitutionAchieved">
+      <path value="IMMZ-D1-client-history-measles.immuneReconstitutionAchieved"/>
+      <code>
+        <system value="http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"/>
+        <code value="DE46"/>
+      </code>
+      <short value="Immune reconstitution was achieved"/>
+      <definition value="The client is known to have achieved immune reconstitution"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="IMMZ-D1-client-history-measles.severelyImmunosuppressed">
+      <path value="IMMZ-D1-client-history-measles.severelyImmunosuppressed"/>
+      <code>
+        <system value="http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"/>
+        <code value="DE92"/>
+      </code>
+      <short value="Severely immunosuppressed"/>
+      <definition value="The client is known to be severely immunocompromised or immunosuppressed"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="IMMZ-D1-client-history-measles.artStartDate">
+      <path value="IMMZ-D1-client-history-measles.artStartDate"/>
+      <code>
+        <system value="http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"/>
+        <code value="DE49"/>
+      </code>
+      <short value="ART start date"/>
+      <definition value="The date on which the client started or restarted antiretroviral therapy (ART)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

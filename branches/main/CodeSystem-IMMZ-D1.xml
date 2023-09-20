@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="IMMZ-D1"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"/>
+  <version value="0.1.0"/>
+  <name value="IMMZ_D1"/>
+  <title value="IMMZ-D1 CodeSystem for Data Elements"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-09-20T16:48:16+00:00"/>
+  <publisher value="WHO"/>
+  <contact>
+    <name value="WHO"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://who.int"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem for IMMZ.C Data Elements"/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="58"/>
+  <concept>
+    <code value="DE80"/>
+    <display value="Dose 0 administered"/>
+    <definition value="Indicates if the client has received a birth dose and/or supplementary dose"/>
+  </concept>
+  <concept>
+    <code value="DE8"/>
+    <display value="Completed the primary vaccination series"/>
+    <definition value="Indicates if the client has completed the primary vaccination series of a product/antigen. If the client has not yet completed their primary series, it means they may be expected to receive more doses to complete their vaccination regimen for the respective product/antigen."/>
+  </concept>
+  <concept>
+    <code value="DE81"/>
+    <display value="Date when primary vaccination series was completed"/>
+    <definition value="The date when the client completed the primary vaccination series (per product/antigen)"/>
+  </concept>
+  <concept>
+    <code value="DE9"/>
+    <display value="Currently pregnant"/>
+    <definition value="The client is currently pregnant"/>
+  </concept>
+  <concept>
+    <code value="DE82"/>
+    <display value="Breastfeeding"/>
+    <definition value="The client is currently breastfeeding"/>
+  </concept>
+  <concept>
+    <code value="DE10"/>
+    <display value="HIV status"/>
+    <definition value="The current human immunodeficiency virus (HIV) status of the client"/>
+  </concept>
+  <concept>
+    <code value="DE11"/>
+    <display value="HIV-positive"/>
+    <definition value="The client is known to be HIV positive"/>
+  </concept>
+  <concept>
+    <code value="DE12"/>
+    <display value="HIV-negative"/>
+    <definition value="The client is known to be HIV negative"/>
+  </concept>
+  <concept>
+    <code value="DE13"/>
+    <display value="Unknown"/>
+    <definition value="The client's HIV status is unknown"/>
+  </concept>
+  <concept>
+    <code value="DE15"/>
+    <display value="Preterm birth"/>
+    <definition value="The infant was preterm"/>
+  </concept>
+  <concept>
+    <code value="DE16"/>
+    <display value="Immunocompromised"/>
+    <definition value="The client is known to be immunocompromised or immunosuppressed. This means the client has a weakened immune system and having a reduced ability to fight infections and other diseases"/>
+  </concept>
+  <concept>
+    <code value="DE17"/>
+    <display value="Currently on ART"/>
+    <definition value="The client is currently receiving antiretroviral therapy (ART)"/>
+  </concept>
+  <concept>
+    <code value="DE84"/>
+    <display value="Type of TB infection test performed"/>
+    <definition value="The type of TB infection test performed"/>
+  </concept>
+  <concept>
+    <code value="DE85"/>
+    <display value="IGRA"/>
+    <definition value="Interferon-gamma release assay (IGRA)"/>
+  </concept>
+  <concept>
+    <code value="DE86"/>
+    <display value="TST"/>
+    <definition value="Tuberculin skin test (TST) "/>
+  </concept>
+  <concept>
+    <code value="DE87"/>
+    <display value="TB infection test result"/>
+    <definition value="Records the result of the TB infection test"/>
+  </concept>
+  <concept>
+    <code value="DE88"/>
+    <display value="Positive"/>
+    <definition value="Test result was positive"/>
+  </concept>
+  <concept>
+    <code value="DE89"/>
+    <display value="Negative"/>
+    <definition value="Test result was negative"/>
+  </concept>
+  <concept>
+    <code value="DE90"/>
+    <display value="HIV-exposed infant"/>
+    <definition value="The infant is  known to be exposed to HIV (i.e. born to an HIV-infected woman)"/>
+  </concept>
+  <concept>
+    <code value="DE29"/>
+    <display value="Birth weight in grams"/>
+    <definition value="Represents the client's birth weight value measures in grams"/>
+  </concept>
+  <concept>
+    <code value="DE35"/>
+    <display value="Type of polio dose"/>
+    <definition value="The type of the polio vaccine dose administered to the client"/>
+  </concept>
+  <concept>
+    <code value="DE36"/>
+    <display value="IPV"/>
+    <definition value="Inactivated poliovirus vaccine (IPV)"/>
+  </concept>
+  <concept>
+    <code value="DE37"/>
+    <display value="bOPV"/>
+    <definition value="Bivalent oral poliovirus vaccine (bOPV)"/>
+  </concept>
+  <concept>
+    <code value="DE38"/>
+    <display value="Age in years when client received first DTP dose"/>
+    <definition value="The client's age in years when they received their first diphtheria-tetanus-pertussis (DTP) dose"/>
+  </concept>
+  <concept>
+    <code value="DE39"/>
+    <display value="Age in months when client received first Hib dose"/>
+    <definition value="The client's age in months when they received their first Haemophilus influenzae type b (Hib) dose"/>
+  </concept>
+  <concept>
+    <code value="DE40"/>
+    <display value="Sickle-cell disease"/>
+    <definition value="The client is known to have a sickle-cell disease"/>
+  </concept>
+  <concept>
+    <code value="DE41"/>
+    <display value="Age in months when client received third pneumococcal dose"/>
+    <definition value="The client's age in months when they received their third pneumococcal dose"/>
+  </concept>
+  <concept>
+    <code value="DE42"/>
+    <display value="No history of intussusception"/>
+    <definition value="The client is known to have no history of intussusception"/>
+  </concept>
+  <concept>
+    <code value="DE43"/>
+    <display value="Previous rotavirus doses given were the same product"/>
+    <definition value="Indicates whether or not all of the client's previous rotavirus doses were the same product"/>
+  </concept>
+  <concept>
+    <code value="DE46"/>
+    <display value="Immune reconstitution was achieved"/>
+    <definition value="The client is known to have achieved immune reconstitution"/>
+  </concept>
+  <concept>
+    <code value="DE92"/>
+    <display value="Severely immunosuppressed"/>
+    <definition value="The client is known to be severely immunocompromised or immunosuppressed"/>
+  </concept>
+  <concept>
+    <code value="DE49"/>
+    <display value="ART start date"/>
+    <definition value="The date on which the client started or restarted antiretroviral therapy (ART)"/>
+  </concept>
+  <concept>
+    <code value="DE52"/>
+    <display value="Type of last JE dose"/>
+    <definition value="The type of the last Japanese encephalitis (JE) vaccine dose administered to the client"/>
+  </concept>
+  <concept>
+    <code value="DE53"/>
+    <display value="Inactivated Vero cell-derived vaccine"/>
+    <definition value="Inactivated Vero cell-derived Japanese encephalitis (JE) vaccine type"/>
+  </concept>
+  <concept>
+    <code value="DE54"/>
+    <display value="Live attenuated vaccine"/>
+    <definition value="Live attenuated Japanese encephalitis (JE) vaccine type"/>
+  </concept>
+  <concept>
+    <code value="DE55"/>
+    <display value="Live recombinant vaccine"/>
+    <definition value="Live recombinant Japanese encephalitis (JE) vaccine type"/>
+  </concept>
+  <concept>
+    <code value="DE56"/>
+    <display value="Type of last TBE dose"/>
+    <definition value="The type of the last tick-borne encephalitis (TBE) vaccine dose administered"/>
+  </concept>
+  <concept>
+    <code value="DE57"/>
+    <display value="FSME-Immun"/>
+    <definition value="FSME-Immun vaccine product, which is an inactivated whole-virus vaccine for tick-borne encephalitis (TBE)"/>
+  </concept>
+  <concept>
+    <code value="DE58"/>
+    <display value="Encepur"/>
+    <definition value="Encepur vaccine product, which is an inactivated viral vaccine for tick-borne encephalitis (TBE)"/>
+  </concept>
+  <concept>
+    <code value="DE59"/>
+    <display value="TBE-Moscow"/>
+    <definition value="TBE-Moscow vaccine product, which is a vaccine for tick-borne encephalitis (TBE)"/>
+  </concept>
+  <concept>
+    <code value="DE60"/>
+    <display value="EnceVir"/>
+    <definition value="EnceVir vaccine product, which is a vaccine for tick-borne encephalitis (TBE)"/>
+  </concept>
+  <concept>
+    <code value="DE61"/>
+    <display value="Type of last typhoid dose"/>
+    <definition value="The type of the last typhoid vaccine dose administered to the client"/>
+  </concept>
+  <concept>
+    <code value="DE62"/>
+    <display value="Typbar-TCV"/>
+    <definition value="Typbar-TCV vaccine"/>
+  </concept>
+  <concept>
+    <code value="DE63"/>
+    <display value="ViPS"/>
+    <definition value="Vi polysaccharide (ViPS) vaccine"/>
+  </concept>
+  <concept>
+    <code value="DE64"/>
+    <display value="Ty21a"/>
+    <definition value="Ty21a vaccine"/>
+  </concept>
+  <concept>
+    <code value="DE65"/>
+    <display value="Type of last cholera dose"/>
+    <definition value="The type of the last cholera vaccine dose administered to the client"/>
+  </concept>
+  <concept>
+    <code value="DE66"/>
+    <display value="WC vaccine"/>
+    <definition value="Killed whole cell (WC) only cholera vaccine"/>
+  </concept>
+  <concept>
+    <code value="DE67"/>
+    <display value="WC-rBS vaccine"/>
+    <definition value="Vaccine contains a mixture of the recombinant B subunit (rBS) of cholera toxin plus killed whole cell (WC)"/>
+  </concept>
+  <concept>
+    <code value="DE68"/>
+    <display value="Type of last meningococcal dose"/>
+    <definition value="The type of the last meningococcal vaccine dose administered to the client"/>
+  </concept>
+  <concept>
+    <code value="DE69"/>
+    <display value="MenA conjugate vaccine (5µg)"/>
+    <definition value="Monovalent serogroup A (MenA) conjugate vaccine (5µg) vaccine"/>
+  </concept>
+  <concept>
+    <code value="DE70"/>
+    <display value="Monovalent MenC conjugate"/>
+    <definition value="Monovalent MenC conjugate vaccine"/>
+  </concept>
+  <concept>
+    <code value="DE71"/>
+    <display value="Quadrivalent conjugate"/>
+    <definition value="Quadrivalent conjugate (A,C,W135,Y-D and A,C,W135,Y-CRM) vaccines"/>
+  </concept>
+  <concept>
+    <code value="DE72"/>
+    <display value="Age in months when client received first meningococcal dose"/>
+    <definition value="The age in months when client received their first meningococcal dose"/>
+  </concept>
+  <concept>
+    <code value="DE73"/>
+    <display value="Type of last hepatitis A dose"/>
+    <definition value="The type of the last hepatitis A vaccine dose administered to the client"/>
+  </concept>
+  <concept>
+    <code value="DE74"/>
+    <display value="Live attenuated hepatitis A vaccine"/>
+    <definition value="Live attenuated hepatitis A vaccine"/>
+  </concept>
+  <concept>
+    <code value="DE75"/>
+    <display value="Inactivated hepatitis A vaccine"/>
+    <definition value="Inactivated hepatitis A vaccine"/>
+  </concept>
+  <concept>
+    <code value="DE76"/>
+    <display value="VNA level"/>
+    <definition value="Vaccine-induced neutralizing (VNA) antibody level. It is a measured as a serum antibody concentration amount observed from the result of the concentrated, purified cell culture and embryonated egg-based rabies vaccines (CCEEV)"/>
+  </concept>
+  <concept>
+    <code value="DE77"/>
+    <display value="Seronegative for dengue"/>
+    <definition value="The client is known to be seronegative for dengue"/>
+  </concept>
+</CodeSystem>

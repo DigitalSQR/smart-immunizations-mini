@@ -1,0 +1,23 @@
+[
+  {
+    "id" : "smart-immunizations-mini",
+    "type" : "ImplementationGuide",
+    "url" : "http://worldhealthorganization.github.io/smart-immunizations-mini/ImplementationGuide/smart-immunizations-mini",
+    "version" : "0.1.0",
+    "name" : "SMART"
+  },
+  {
+    "id" : "MyPatient",
+    "type" : "StructureDefinition",
+    "url" : "http://worldhealthorganization.github.io/smart-immunizations-mini/StructureDefinition/MyPatient",
+    "version" : "0.1.0",
+    "name" : "MyPatient"
+  },
+  {
+    "id" : "SMARTImplementationGuide",
+    "type" : "StructureDefinition",
+    "url" : "http://worldhealthorganization.github.io/smart-immunizations-mini/StructureDefinition/SMARTImplementationGuide",
+    "version" : "0.1.0",
+    "name" : "SMARTImplementationGuide"
+  }
+]

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="IMMZ.C.ConceptMap"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="http://worldhealthorganization.github.io/smart-immunizations-mini/ConceptMap/IMMZ.C.ConceptMap"/>
+  <version value="0.1.0"/>
+  <name value="IMMZ_C_ConceptMap"/>
+  <title value="ConceptMap to and from IMMZ.C DataElements"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-08-04"/>
+  <publisher value="WHO"/>
+  <contact>
+    <name value="WHO"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://who.int"/>
+    </telecom>
+  </contact>
+  <description value="Mapping to and from IMMZ.C Data Dictionary to other codesystems."/>
+  <group>
+    <source value="http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-C"/>
+    <target value="http://hl7.org/fhir/sid/icd-11"/>
+    <element>
+      <code value="DE6"/>
+      <target>
+        <code value="XX2UQ8"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="DE7"/>
+      <target>
+        <code value="XX2V25"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="DE8"/>
+      <target>
+        <code value="XX2PX3"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="DE9"/>
+      <target>
+        <code value="XX45B7"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="http://hl7.org/fhir/sid/icd-11"/>
+    <target value="http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-C"/>
+    <element>
+      <code value="XX2UQ8"/>
+      <target>
+        <code value="DE6"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="XX2V25"/>
+      <target>
+        <code value="DE7"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="XX2PX3"/>
+      <target>
+        <code value="DE8"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="XX45B7"/>
+      <target>
+        <code value="DE9"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-C"/>
+    <target value="http://loinc.org"/>
+    <element>
+      <code value="DE2"/>
+      <target>
+        <code value="54125-0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="DE3"/>
+      <target>
+        <code value="45392-8"/>
+        <equivalence value="relatedto"/>
+      </target>
+    </element>
+    <element>
+      <code value="DE4"/>
+      <target>
+        <code value="45394-4"/>
+        <equivalence value="relatedto"/>
+      </target>
+    </element>
+    <element>
+      <code value="DE5"/>
+      <target>
+        <code value="46098-0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="DE10"/>
+      <target>
+        <code value="21112-8"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="DE13"/>
+      <target>
+        <code value="63900-5"/>
+        <equivalence value="wider"/>
+      </target>
+    </element>
+    <element>
+      <code value="DE18"/>
+      <target>
+        <code value="42077-8"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="DE19"/>
+      <target>
+        <code value="56799-0"/>
+        <equivalence value="narrower"/>
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-C"/>
+    <target value="http://snomed.info/sct"/>
+    <element>
+      <code value="DE2"/>
+      <target>
+        <code value="371484003"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="DE3"/>
+      <target>
+        <code value="184095009"/>
+        <equivalence value="relatedto"/>
+      </target>
+    </element>
+    <element>
+      <code value="DE4"/>
+      <target>
+        <code value="184096005"/>
+        <equivalence value="relatedto"/>
+      </target>
+    </element>
+    <element>
+      <code value="DE5"/>
+      <target>
+        <code value="184100006"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="DE6"/>
+      <target>
+        <code value="248153007"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="DE7"/>
+      <target>
+        <code value="248152002"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="DE8"/>
+      <target>
+        <code value="772004004"/>
+        <equivalence value="relatedto"/>
+      </target>
+    </element>
+    <element>
+      <code value="DE9"/>
+      <target>
+        <code value="15867007"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="DE10"/>
+      <target>
+        <code value="184099003"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="DE14"/>
+      <target>
+        <code value="184140000"/>
+        <equivalence value="wider"/>
+      </target>
+    </element>
+    <element>
+      <code value="DE15"/>
+      <target>
+        <code value="184140000"/>
+        <equivalence value="wider"/>
+      </target>
+    </element>
+    <element>
+      <code value="DE18"/>
+      <target>
+        <code value="184103008"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="DE19"/>
+      <target>
+        <code value="184097001"/>
+        <equivalence value="narrower"/>
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="http://snomed.info/sct"/>
+    <target value="http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-C"/>
+    <element>
+      <code value="248153007"/>
+      <target>
+        <code value="DE6"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="248152002"/>
+      <target>
+        <code value="DE7"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="772004004"/>
+      <target>
+        <code value="DE8"/>
+        <equivalence value="relatedto"/>
+      </target>
+    </element>
+    <element>
+      <code value="15867007"/>
+      <target>
+        <code value="DE9"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

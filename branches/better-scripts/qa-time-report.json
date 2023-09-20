@@ -1,0 +1,220 @@
+{
+  "date" : "Wed, 23 Aug, 2023 17:48:03 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-smart-immunizations-mini.json",
+      "size" : 6752,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 597
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 64,
+          "length" : 6
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 64,
+          "length" : 744
+        },
+        {
+          "activity" : "validate",
+          "start" : 72,
+          "length" : 2265
+        },
+        {
+          "activity" : "generate1",
+          "start" : 75,
+          "length" : 175
+        },
+        {
+          "activity" : "generate2",
+          "start" : 79,
+          "length" : 287
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 95,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 96,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-MyPatient.json",
+      "size" : 1201,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 59,
+          "length" : 35
+        },
+        {
+          "activity" : "loadInfo",
+          "start" : 59,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 43
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 60,
+          "length" : 1444
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 64,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 65,
+          "length" : 1376
+        },
+        {
+          "activity" : "validate",
+          "start" : 69,
+          "length" : 1683
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 74,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 76,
+          "length" : 259
+        },
+        {
+          "activity" : "generate2",
+          "start" : 79,
+          "length" : 2996
+        },
+        {
+          "activity" : "makeDependencies",
+          "start" : 89,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 96,
+          "length" : 14
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 102,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 102,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Patient-PatientExample.json",
+      "size" : 296,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 59,
+          "length" : 12
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 59,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 66,
+          "length" : 12
+        },
+        {
+          "activity" : "validate",
+          "start" : 74,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 76,
+          "length" : 6
+        },
+        {
+          "activity" : "generate2",
+          "start" : 82,
+          "length" : 31
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-SMARTImplementationGuide.json",
+      "size" : 1184,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 59,
+          "length" : 26
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 28
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 61,
+          "length" : 2984
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 66,
+          "length" : 2897
+        },
+        {
+          "activity" : "validate",
+          "start" : 71,
+          "length" : 1195
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 74,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 76,
+          "length" : 449
+        },
+        {
+          "activity" : "generate2",
+          "start" : 82,
+          "length" : 2272
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 96,
+          "length" : 24
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 102,
+          "length" : 1
+        }
+      ]
+    }
+  ]
+}

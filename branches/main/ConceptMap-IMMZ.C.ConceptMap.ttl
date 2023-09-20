@@ -1,0 +1,252 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://worldhealthorganization.github.io/smart-immunizations-mini/ConceptMap/IMMZ.C.ConceptMap> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "IMMZ.C.ConceptMap"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/ConceptMap/IMMZ.C.ConceptMap"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "IMMZ_C_ConceptMap"] ; # 
+  fhir:title [ fhir:v "ConceptMap to and from IMMZ.C DataElements"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-08-04"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "WHO"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "WHO" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Mapping to and from IMMZ.C Data Dictionary to other codesystems."] ; # 
+  fhir:group ( [
+     fhir:source [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-C"^^xsd:anyURI ] ;
+     fhir:target [ fhir:v "http://hl7.org/fhir/sid/icd-11"^^xsd:anyURI ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "DE6" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "XX2UQ8" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "DE7" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "XX2V25" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "DE8" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "XX2PX3" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "DE9" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "XX45B7" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] )
+  ] [
+     fhir:source [ fhir:v "http://hl7.org/fhir/sid/icd-11"^^xsd:anyURI ] ;
+     fhir:target [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-C"^^xsd:anyURI ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "XX2UQ8" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "DE6" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "XX2V25" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "DE7" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "XX2PX3" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "DE8" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "XX45B7" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "DE9" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] )
+  ] [
+     fhir:source [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-C"^^xsd:anyURI ] ;
+     fhir:target [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "DE2" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "54125-0" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "DE3" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "45392-8" ] ;
+         fhir:equivalence [ fhir:v "relatedto" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "DE4" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "45394-4" ] ;
+         fhir:equivalence [ fhir:v "relatedto" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "DE5" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "46098-0" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "DE10" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "21112-8" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "DE13" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "63900-5" ] ;
+         fhir:equivalence [ fhir:v "wider" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "DE18" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "42077-8" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "DE19" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "56799-0" ] ;
+         fhir:equivalence [ fhir:v "narrower" ]
+       ] )
+     ] )
+  ] [
+     fhir:source [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-C"^^xsd:anyURI ] ;
+     fhir:target [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "DE2" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "371484003" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "DE3" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "184095009" ] ;
+         fhir:equivalence [ fhir:v "relatedto" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "DE4" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "184096005" ] ;
+         fhir:equivalence [ fhir:v "relatedto" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "DE5" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "184100006" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "DE6" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "248153007" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "DE7" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "248152002" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "DE8" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "772004004" ] ;
+         fhir:equivalence [ fhir:v "relatedto" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "DE9" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15867007" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "DE10" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "184099003" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "DE14" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "184140000" ] ;
+         fhir:equivalence [ fhir:v "wider" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "DE15" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "184140000" ] ;
+         fhir:equivalence [ fhir:v "wider" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "DE18" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "184103008" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "DE19" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "184097001" ] ;
+         fhir:equivalence [ fhir:v "narrower" ]
+       ] )
+     ] )
+  ] [
+     fhir:source [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+     fhir:target [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-C"^^xsd:anyURI ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "248153007" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "DE6" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "248152002" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "DE7" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "772004004" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "DE8" ] ;
+         fhir:equivalence [ fhir:v "relatedto" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15867007" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "DE9" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

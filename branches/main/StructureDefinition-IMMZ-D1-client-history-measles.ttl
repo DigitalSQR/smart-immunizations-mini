@@ -1,0 +1,513 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://worldhealthorganization.github.io/smart-immunizations-mini/StructureDefinition/IMMZ-D1-client-history-measles> a fhir:StructureDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "IMMZ-D1-client-history-measles"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/StructureDefinition/IMMZ-D1-client-history-measles"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "IMMZ_D1_Client_History_Measles"] ; # 
+  fhir:title [ fhir:v "IMMZ-D1 Capture Client History for Measles"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-09-20T16:48:16+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "WHO"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "WHO" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Data elements for the IMMZ-D1 Capture Client History Data Dictionary for Measles."] ; # 
+  fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
+  fhir:mapping ( [
+     fhir:identity [ fhir:v "rim" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/v3"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "RIM Mapping" ]
+  ] ) ; # 
+  fhir:kind [ fhir:v "logical"] ; # 
+  fhir:abstract [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:type [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/StructureDefinition/IMMZ-D1-client-history-measles"^^xsd:anyURI] ; # 
+  fhir:baseDefinition [
+     fhir:v "http://hl7.org/fhir/StructureDefinition/Base"^^xsd:anyURI ;
+     fhir:link <http://hl7.org/fhir/StructureDefinition/Base>
+  ] ; # 
+  fhir:derivation [ fhir:v "specialization"] ; # 
+  fhir:snapshot [
+     fhir:element ( [
+       fhir:id [ fhir:v "IMMZ-D1-client-history-measles" ] ;
+       fhir:path [ fhir:v "IMMZ-D1-client-history-measles" ] ;
+       fhir:short [ fhir:v "IMMZ-D1 Capture Client History for Measles" ] ;
+       fhir:definition [ fhir:v "Data elements for the IMMZ-D1 Capture Client History Data Dictionary for Measles." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Base" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZ-D1-client-history-measles.dose0" ] ;
+       fhir:path [ fhir:v "IMMZ-D1-client-history-measles.dose0" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE80" ]
+       ] ) ;
+       fhir:short [ fhir:v "Dose 0 administered" ] ;
+       fhir:definition [ fhir:v "Indicates if the client has received a birth dose and/or supplementary dose" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZ-D1-client-history-measles.dose0" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZ-D1-client-history-measles.completedPrimarySeries" ] ;
+       fhir:path [ fhir:v "IMMZ-D1-client-history-measles.completedPrimarySeries" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE8" ]
+       ] ) ;
+       fhir:short [ fhir:v "Completed the primary vaccination series" ] ;
+       fhir:definition [ fhir:v "Indicates if the client has completed the primary vaccination series of a product/antigen. If the client has not yet completed their primary series, it means they may be expected to receive more doses to complete their vaccination regimen for the respective product/antigen." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZ-D1-client-history-measles.completedPrimarySeries" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZ-D1-client-history-measles.dateSeriesCompleted" ] ;
+       fhir:path [ fhir:v "IMMZ-D1-client-history-measles.dateSeriesCompleted" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE81" ]
+       ] ) ;
+       fhir:short [ fhir:v "Date when primary vaccination series was completed" ] ;
+       fhir:definition [ fhir:v "The date when the client completed the primary vaccination series (per product/antigen)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZ-D1-client-history-measles.dateSeriesCompleted" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZ-D1-client-history-measles.pregnant" ] ;
+       fhir:path [ fhir:v "IMMZ-D1-client-history-measles.pregnant" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE9" ]
+       ] ) ;
+       fhir:short [ fhir:v "Currently pregnant" ] ;
+       fhir:definition [ fhir:v "The client is currently pregnant" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZ-D1-client-history-measles.pregnant" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZ-D1-client-history-measles.breastfeeding" ] ;
+       fhir:path [ fhir:v "IMMZ-D1-client-history-measles.breastfeeding" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE82" ]
+       ] ) ;
+       fhir:short [ fhir:v "Breastfeeding" ] ;
+       fhir:definition [ fhir:v "The client is currently breastfeeding" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZ-D1-client-history-measles.breastfeeding" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZ-D1-client-history-measles.hivStatus" ] ;
+       fhir:path [ fhir:v "IMMZ-D1-client-history-measles.hivStatus" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE10" ]
+       ] ) ;
+       fhir:short [ fhir:v "HIV status" ] ;
+       fhir:definition [ fhir:v "The current human immunodeficiency virus (HIV) status of the client" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZ-D1-client-history-measles.hivStatus" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Coding"^^xsd:anyURI ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:valueSet [
+           fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/ValueSet/IMMZ-D1.DE10"^^xsd:anyURI ;
+           fhir:link <http://worldhealthorganization.github.io/smart-immunizations-mini/ValueSet/IMMZ-D1.DE10>
+         ]
+       ]
+     ] [
+       fhir:id [ fhir:v "IMMZ-D1-client-history-measles.pretermBirth" ] ;
+       fhir:path [ fhir:v "IMMZ-D1-client-history-measles.pretermBirth" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE15" ]
+       ] ) ;
+       fhir:short [ fhir:v "Preterm birth" ] ;
+       fhir:definition [ fhir:v "The infant was preterm, the mother gave birth to the infant when gestational age was less than 37 weeks" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZ-D1-client-history-measles.pretermBirth" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZ-D1-client-history-measles.immunocompromised" ] ;
+       fhir:path [ fhir:v "IMMZ-D1-client-history-measles.immunocompromised" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE16" ]
+       ] ) ;
+       fhir:short [ fhir:v "Immunocompromised" ] ;
+       fhir:definition [ fhir:v "The client is known to be immunocompromised or immunosuppressed. This means the client has a weakened immune system and having a reduced ability to fight infections and other diseases" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZ-D1-client-history-measles.immunocompromised" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZ-D1-client-history-measles.onART" ] ;
+       fhir:path [ fhir:v "IMMZ-D1-client-history-measles.onART" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE17" ]
+       ] ) ;
+       fhir:short [ fhir:v "Currently on ART" ] ;
+       fhir:definition [ fhir:v "The client is currently receiving antiretroviral therapy (ART)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZ-D1-client-history-measles.onART" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZ-D1-client-history-measles.hivExposedInfant" ] ;
+       fhir:path [ fhir:v "IMMZ-D1-client-history-measles.hivExposedInfant" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE90" ]
+       ] ) ;
+       fhir:short [ fhir:v "HIV-exposed infant" ] ;
+       fhir:definition [ fhir:v "The infant is known to be exposed to HIV (i.e. born to an HIV-infected woman)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZ-D1-client-history-measles.hivExposedInfant" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZ-D1-client-history-measles.immuneReconstitutionAchieved" ] ;
+       fhir:path [ fhir:v "IMMZ-D1-client-history-measles.immuneReconstitutionAchieved" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE46" ]
+       ] ) ;
+       fhir:short [ fhir:v "Immune reconstitution was achieved" ] ;
+       fhir:definition [ fhir:v "The client is known to have achieved immune reconstitution" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZ-D1-client-history-measles.immuneReconstitutionAchieved" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZ-D1-client-history-measles.severelyImmunosuppressed" ] ;
+       fhir:path [ fhir:v "IMMZ-D1-client-history-measles.severelyImmunosuppressed" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE92" ]
+       ] ) ;
+       fhir:short [ fhir:v "Severely immunosuppressed" ] ;
+       fhir:definition [ fhir:v "The client is known to be severely immunocompromised or immunosuppressed" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZ-D1-client-history-measles.severelyImmunosuppressed" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZ-D1-client-history-measles.artStartDate" ] ;
+       fhir:path [ fhir:v "IMMZ-D1-client-history-measles.artStartDate" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE49" ]
+       ] ) ;
+       fhir:short [ fhir:v "ART start date" ] ;
+       fhir:definition [ fhir:v "The date on which the client started or restarted antiretroviral therapy (ART)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZ-D1-client-history-measles.artStartDate" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] )
+     ] )
+  ] ; # 
+  fhir:differential [
+     fhir:element ( [
+       fhir:id [ fhir:v "IMMZ-D1-client-history-measles" ] ;
+       fhir:path [ fhir:v "IMMZ-D1-client-history-measles" ] ;
+       fhir:short [ fhir:v "IMMZ-D1 Capture Client History for Measles" ] ;
+       fhir:definition [ fhir:v "Data elements for the IMMZ-D1 Capture Client History Data Dictionary for Measles." ]
+     ] [
+       fhir:id [ fhir:v "IMMZ-D1-client-history-measles.dose0" ] ;
+       fhir:path [ fhir:v "IMMZ-D1-client-history-measles.dose0" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE80" ]
+       ] ) ;
+       fhir:short [ fhir:v "Dose 0 administered" ] ;
+       fhir:definition [ fhir:v "Indicates if the client has received a birth dose and/or supplementary dose" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZ-D1-client-history-measles.completedPrimarySeries" ] ;
+       fhir:path [ fhir:v "IMMZ-D1-client-history-measles.completedPrimarySeries" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE8" ]
+       ] ) ;
+       fhir:short [ fhir:v "Completed the primary vaccination series" ] ;
+       fhir:definition [ fhir:v "Indicates if the client has completed the primary vaccination series of a product/antigen. If the client has not yet completed their primary series, it means they may be expected to receive more doses to complete their vaccination regimen for the respective product/antigen." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZ-D1-client-history-measles.dateSeriesCompleted" ] ;
+       fhir:path [ fhir:v "IMMZ-D1-client-history-measles.dateSeriesCompleted" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE81" ]
+       ] ) ;
+       fhir:short [ fhir:v "Date when primary vaccination series was completed" ] ;
+       fhir:definition [ fhir:v "The date when the client completed the primary vaccination series (per product/antigen)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZ-D1-client-history-measles.pregnant" ] ;
+       fhir:path [ fhir:v "IMMZ-D1-client-history-measles.pregnant" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE9" ]
+       ] ) ;
+       fhir:short [ fhir:v "Currently pregnant" ] ;
+       fhir:definition [ fhir:v "The client is currently pregnant" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZ-D1-client-history-measles.breastfeeding" ] ;
+       fhir:path [ fhir:v "IMMZ-D1-client-history-measles.breastfeeding" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE82" ]
+       ] ) ;
+       fhir:short [ fhir:v "Breastfeeding" ] ;
+       fhir:definition [ fhir:v "The client is currently breastfeeding" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZ-D1-client-history-measles.hivStatus" ] ;
+       fhir:path [ fhir:v "IMMZ-D1-client-history-measles.hivStatus" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE10" ]
+       ] ) ;
+       fhir:short [ fhir:v "HIV status" ] ;
+       fhir:definition [ fhir:v "The current human immunodeficiency virus (HIV) status of the client" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Coding"^^xsd:anyURI ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:valueSet [
+           fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/ValueSet/IMMZ-D1.DE10"^^xsd:anyURI ;
+           fhir:link <http://worldhealthorganization.github.io/smart-immunizations-mini/ValueSet/IMMZ-D1.DE10>
+         ]
+       ]
+     ] [
+       fhir:id [ fhir:v "IMMZ-D1-client-history-measles.pretermBirth" ] ;
+       fhir:path [ fhir:v "IMMZ-D1-client-history-measles.pretermBirth" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE15" ]
+       ] ) ;
+       fhir:short [ fhir:v "Preterm birth" ] ;
+       fhir:definition [ fhir:v "The infant was preterm, the mother gave birth to the infant when gestational age was less than 37 weeks" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZ-D1-client-history-measles.immunocompromised" ] ;
+       fhir:path [ fhir:v "IMMZ-D1-client-history-measles.immunocompromised" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE16" ]
+       ] ) ;
+       fhir:short [ fhir:v "Immunocompromised" ] ;
+       fhir:definition [ fhir:v "The client is known to be immunocompromised or immunosuppressed. This means the client has a weakened immune system and having a reduced ability to fight infections and other diseases" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZ-D1-client-history-measles.onART" ] ;
+       fhir:path [ fhir:v "IMMZ-D1-client-history-measles.onART" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE17" ]
+       ] ) ;
+       fhir:short [ fhir:v "Currently on ART" ] ;
+       fhir:definition [ fhir:v "The client is currently receiving antiretroviral therapy (ART)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZ-D1-client-history-measles.hivExposedInfant" ] ;
+       fhir:path [ fhir:v "IMMZ-D1-client-history-measles.hivExposedInfant" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE90" ]
+       ] ) ;
+       fhir:short [ fhir:v "HIV-exposed infant" ] ;
+       fhir:definition [ fhir:v "The infant is known to be exposed to HIV (i.e. born to an HIV-infected woman)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZ-D1-client-history-measles.immuneReconstitutionAchieved" ] ;
+       fhir:path [ fhir:v "IMMZ-D1-client-history-measles.immuneReconstitutionAchieved" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE46" ]
+       ] ) ;
+       fhir:short [ fhir:v "Immune reconstitution was achieved" ] ;
+       fhir:definition [ fhir:v "The client is known to have achieved immune reconstitution" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZ-D1-client-history-measles.severelyImmunosuppressed" ] ;
+       fhir:path [ fhir:v "IMMZ-D1-client-history-measles.severelyImmunosuppressed" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE92" ]
+       ] ) ;
+       fhir:short [ fhir:v "Severely immunosuppressed" ] ;
+       fhir:definition [ fhir:v "The client is known to be severely immunocompromised or immunosuppressed" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZ-D1-client-history-measles.artStartDate" ] ;
+       fhir:path [ fhir:v "IMMZ-D1-client-history-measles.artStartDate" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "http://worldhealthorganization.github.io/smart-immunizations-mini/CodeSystem/IMMZ-D1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE49" ]
+       ] ) ;
+       fhir:short [ fhir:v "ART start date" ] ;
+       fhir:definition [ fhir:v "The date on which the client started or restarted antiretroviral therapy (ART)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
